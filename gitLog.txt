@@ -1,0 +1,69 @@
+commit c7ac1133b99a5e49ae992f86826e4adbdf716b87 (HEAD -> master)
+Author: Razeen Brey <bryraz002@myuct.ac.za>
+Date:   Mon Sep 9 21:19:30 2024 +0200
+
+    PCP2| Stable solution reached.
+
+commit 37bbc0a5e208e3350a19a40a917c36ade1e7f08f
+Author: Razeen Brey <bryraz002@myuct.ac.za>
+Date:   Mon Sep 9 15:43:08 2024 +0200
+
+    PCP2| working wait for backstroke
+
+commit 6f212b58fd827d6b379d927e6963949739856014
+Author: Razeen Brey <bryraz002@myuct.ac.za>
+Date:   Mon Sep 9 14:29:35 2024 +0200
+
+    PCP2|Ordering of Swimmers achieved.
+
+commit 3e9016c8c5748f654ca29ce8ceb74e265769c288
+Author: Razeen Brey <bryraz002@myuct.ac.za>
+Date:   Fri Sep 6 21:27:11 2024 +0200
+
+    PCP2|Resolved data races in GridBlock's atomicity.
+
+commit ed04bb23ea2d70c409f2ee7489a6b816467a57fc
+Author: Razeen Brey <bryraz002@myuct.ac.za>
+Date:   Mon Sep 2 21:49:12 2024 +0200
+
+    PCP2|Commit 3
+
+            > GridBlock
+                    Fixed atomicity by removing use of 'synchronised' and replaced with AtomicInteger for isOccupied.
+            > StadiumGrid
+                    Implementing changes caused by changes to GridBlock.
+            > Swimmer
+                    Begin introduction of cyclic barrier.
+
+commit 85da12393feb09bc61439bd8d01a0755f9d82ebb
+Author: Razeen Brey <bryraz002@myuct.ac.za>
+Date:   Sun Aug 25 21:53:18 2024 +0200
+
+    PCP2|Commit 2
+
+    > StadiumGrid
+            Spinning resolved.
+            Begin ordering threads.
+
+commit 5700bf78cbc0926578303ae2e86b1f3cc1783255
+Author: Razeen Brey <bryraz002@myuct.ac.za>
+Date:   Sun Aug 25 00:35:30 2024 +0200
+
+    PCP2|Commit 1
+
+    > MedleySimulation
+            Implemented Start button
+    > GridBlock
+            Introduced Atomicity
+    > StadiumGrid
+            Addressing Atomicity inconsistencies.
+            Begin resolving spinning.
+            A solution created for enterStadium. To be implemented in moveTowards and jumpTo
+
+commit 3caef580ef4c7027be49281ac51fe39aaacba270
+Author: Razeen Brey <bryraz002@myuct.ac.za>
+Date:   Thu Aug 22 15:18:24 2024 +0200
+
+    PCP2|Commit 0
+
+    > Added program files.

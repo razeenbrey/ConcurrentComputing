@@ -1,0 +1,38 @@
+> Start initiates simulation
+    Achieved
+
+> Quit ends
+    Already given
+
+> One swimmer per block at any time
+    Achieved - deadlock visible as proof. created atomicboolean in gridBlock
+
+> Swimmers move simultaneously
+    Already given
+
+> Enter in race order
+    enterStadioum no longer spins - synchonised gridBlock
+    place start and stop CountDownLatches in swimmer
+    apply in swimmer run
+    count down in SwimTeam
+
+>>>>>>>>>>>>>>>>>>>>
+retry
+Start button starts
+
+........................
+Create atomic int for each team - initialise to 1 (do this in SwimTeam)
+pass it to Swimmers so that each one has samee
+lock enterStadioum on atomic variable
+    if order of swimmer not = to atomicint
+        wait on atomicvariable
+    else
+        enterStadioum
+        increment atomicint
+        noticy atomic
+
+
+put 3 single CountDownLatches in SwimTeam
+
+Swimmers
+    blac finihs race - count down next
